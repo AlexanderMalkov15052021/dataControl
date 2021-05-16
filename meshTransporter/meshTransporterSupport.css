@@ -1,0 +1,382 @@
+.frameDown {
+  background-color: #555555;
+  width: 16px;
+  height: 410px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.frameDown:after {
+  background-color: #666666;
+  width: 8px;
+  height: 410px;
+  position: absolute;
+  transform: rotateY(90deg)translateZ(-3.3px) translateX(-4px);
+  content: "";
+}
+.frameDown:before {
+  background-color: #666666;
+  width: 8px;
+  height: 410px;
+  position: absolute;
+  transform: rotateY(90deg) translateZ(12px) translateX(-3px);
+  content: "";
+}
+.frameUp {
+  background-color: #555555;
+  width: 16px;
+  height: 350px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.frameUp:after {
+  background-color: #666666;
+  width: 8px;
+  height: 350px;
+  position: absolute;
+  transform: rotateY(90deg) translateZ(-3.3px) translateX(-4px);
+  content: "";
+}
+.frameUp:before {
+  background-color: #666666;
+  width: 8px;
+  height: 350px;
+  position: absolute;
+  transform: rotateY(90deg) translateZ(12px) translateX(-3px);
+  content: "";
+}
+.frameVertical {
+  background-color: #555555;
+  width: 16px;
+  height: 46px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.frameVertical:after {
+  background-color: #666666;
+  width: 8px;
+  height: 46px;
+  position: absolute;
+  transform: rotateY(90deg) translateZ(-3px) translateX(-4px);
+  content: "";
+}
+.frameVertical:before {
+  background-color: #666666;
+  width: 8px;
+  height: 46px;
+  position: absolute;
+  transform: rotateY(90deg) translateZ(11px) translateX(-4px);
+  content: "";
+}
+.supportMeshMotor {
+  background-color: #666666;
+  width: 40px;
+  height: 54px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.supportMeshMotor:after {
+  box-shadow: inset 0 0 0 7px #777777;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  transform: rotateY(90deg) translateZ(19px) translateX(20px);
+  content: "";
+}
+.supportMeshMotor:before {
+  box-shadow: inset 0 0 0 7px #777777;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  transform: rotateX(90deg) translateZ(-19px) translateY(-20px);
+  content: "";
+}
+.meshReducer {
+  background-color: #888888;
+  width: 25px; 
+  height: 25px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.meshReducer:after {
+  background-color: #888888;
+  width: 25px;
+  height: 40px;
+  position: absolute;
+  transform: rotateX(90deg) translateZ(-4.8px) translateY(19.9px);
+  content: "";
+}
+.meshReducer:before {
+  background-color: #888888;
+  width: 25px;
+  height: 40px;
+  position: absolute;
+  transform: rotateX(90deg) translateZ(19.8px) translateY(19.9px);
+  content: "";
+}
+.shaftMeshMotor {
+  box-shadow: inset 0 12px 0 0 #888888;
+  background-color: #777777;
+  width: 4px;
+  height: 25px;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.shaftMeshMotor:after {
+  box-shadow: inset 0 12px 0 0 #888888;
+  background-color: #777777;
+  width: 4px;
+  height: 25px;
+  position: absolute;
+  transform: translateZ(-3px) rotateY(40deg) translateZ(3px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.shaftMeshMotor:before {
+  box-shadow: inset 0 12px 0 0 #888888;
+  background-color: #777777;
+  width: 4px;
+  height: 25px;
+  position: absolute;
+  transform: translateZ(-3px) rotateY(80deg) translateZ(3px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.MeshMotor {
+  box-shadow: inset 0 7px 0 0 #aaaaaa;
+  background-color: #999999;
+  width: 7px;
+  height: 25px;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.MeshMotor:after {
+  box-shadow: inset 0 7px 0 0 #aaaaaa;
+  background-color: #999999;
+  width: 6.6px;
+  height: 25px;
+  position: absolute;
+  transform: translateZ(-12px) rotateY(30deg) translateZ(12px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.MeshMotor:before {
+  box-shadow: inset 0 7px 0 0 #aaaaaa;
+  background-color: #999999;
+  width: 6.6px;
+  height: 25px;
+  position: absolute;
+  transform: translateZ(-12px) rotateY(60deg) translateZ(12px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.recapMotor {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #aaaaaa;
+}
+.couplingMeshMotor {
+  box-shadow: inset 0 -4px 0 0 #777777;
+  background-color: #888888;
+  width: 4.5px;
+  height: 8px;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.couplingMeshMotor:after {
+  box-shadow: inset 0 -4px 0 0 #777777;
+  background-color: #888888;
+  width: 4.5px;
+  height: 8px;
+  position: absolute;
+  transform: translateZ(-8px) rotateY(30deg) translateZ(8px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.couplingMeshMotor:before {
+  box-shadow: inset 0 -4px 0 0 #777777;
+  background-color: #888888;
+  width: 4.5px;
+  height: 8px;
+  position: absolute;
+  transform: translateZ(-8px) rotateY(60deg) translateZ(8px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.footingMeshAxlebox {
+  background-color: #773300;
+  width: 22px;
+  height: 9px;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.footingMeshAxlebox:after {
+  background-color: #773300;
+  width: 7px;
+  height: 9px;
+  position: absolute;
+  content: "";
+  transform: rotateY(90deg) translateZ(-3px) translateX(-3px) translateY(.4px);
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.footingMeshAxlebox:before {
+  background-color: #773300;
+  width: 22px;
+  height: 7px;
+  position: absolute;
+  content: "";
+  transform: rotateX(90deg) translateZ(3.6px) translateY(3px);
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.halfCircleMeshAxlebox {
+  background-color: #993300;
+  width: 6px;
+  height: 7px;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.halfCircleMeshAxlebox:after {
+  background-color: #993300;
+  width: 6px;
+  height: 7px;
+  position: absolute;
+  transform: translateZ(-8px) rotateY(40deg) translateZ(8px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.halfCircleMeshAxlebox:before {
+  background-color: #993300;
+  width: 6px;
+  height: 7px;
+  position: absolute;
+  transform: translateZ(-8px) rotateY(80deg) translateZ(8px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.recapMeshAxlebox {
+  width: 18px;
+  height: 11px;
+  position: absolute;
+  background-color: #663300;
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+}
+.boxMotor {
+  background-color: #888888;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.boxMotor:after {
+  background-color: #888888;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  content: "";
+  transform: rotateY(90deg) translateZ(5px) translateX(5px) translateY(0px);
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.boxMotor:before {
+  background-color: #888888;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  content: "";
+  transform: rotateX(90deg) translateZ(-5px) translateY(-5px);
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.cableMeshMotor {
+  background-color: #777777;
+  width: 1.5px;
+  height: 48px;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.cableMeshMotor:after {
+  background-color: #777777;
+  width: 1.5px;
+  height: 48px;
+  position: absolute;
+  transform: translateZ(-1.5px) rotateY(40deg) translateZ(1.5px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.cableMeshMotor:before {
+  background-color: #777777;
+  width: 1.5px;
+  height: 48px;
+  position: absolute;
+  transform: translateZ(-1.5px) rotateY(80deg) translateZ(1.5px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

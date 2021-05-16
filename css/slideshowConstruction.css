@@ -1,0 +1,172 @@
+.visiblePartConstruction {
+  overflow: hidden;
+  width: 340px;
+  height: 264px;
+  position: relative;
+  margin: 0 auto;
+}
+.visiblePartSet {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 340px;
+  height: 189px;
+  position: relative;
+}
+.constructionSelect {
+  float: right;
+  position: relative;
+  background-color: #ffa000;
+  color: white;
+  box-shadow: 1px 1px 1px #911e42, -1px -1px 1px #911e42;
+  text-shadow: 1px 1px 1px black;
+  border-radius: 20%;
+  outline: none;
+  border: transparent;
+  cursor: pointer;
+}
+.constructionSelectShadow {
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}
+nav {
+  width: 160px;
+  height: 100px;
+  position: absolute;
+  left: 175px;
+}
+.constructionSelectActive {
+  background-color: red;
+  animation-duration: 1s;
+  animation-name: selectAnimation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.arrowWrapper {
+  margin: 0 auto;
+  width: 340px;
+  height: 38px;
+  position: relative;
+}
+.moveBtn {
+  background-color: transparent;
+  border: transparent;
+  outline: none;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, transparent 30%, #ffa000 30% 33%, #911e42 30% 33%, transparent 45%),
+  linear-gradient(135deg, transparent 30%, #ffa000 30% 33%, #911e42 30% 33%, transparent 45%);
+  background-size: 17px 56px;
+  background-position: 0px -11px, 0 -6px;
+  transition-property: background-position;
+  width: 50px;
+  height: 38px;
+  position: relative;
+  margin-left: 78px;
+  animation-duration: 1s;
+}
+.moveBtn:last-child {
+  transform: rotateZ(180deg);
+}
+.moveBtnSetAnim {
+  animation-name: moveBtnAnimLeft;
+}
+.information {
+  position: relative;
+  width: 340px;
+  height: auto;
+  margin-right: 160px;
+  float: left;
+}
+.blockInformation {
+  position: relative;
+  width: 2550px;
+  height: auto;
+}
+@keyframes selectAnimation {
+  0% {
+    left: 2px;
+  }
+  25% {
+    left: 0px;
+  }
+  50% {
+    left: -2px;
+  }
+  75% {
+    left: 0px;
+  }
+  100% {
+    left: 2px;
+  }
+}
+@keyframes moveBtnAnimLeft {
+  from {
+    background-position: 0px -11px, 0 -6px;
+  }
+  to {
+    background-position: -17px -11px, -17px -6px;
+  }
+}
+@keyframes moveBtnAnimRight {
+  from {
+    background-position: 0px -11px, 0 -6px;
+  }
+  to {
+    background-position: 17px -11px, 17px -6px;
+  }
+}
+@media(min-width: 600px) {
+  .visiblePartConstruction {
+    width: 600px;
+    height: 350px;
+  }
+  nav {
+    width: 194px;
+    height: 200px;
+    left: 402px;
+  }
+  .constructionSelect {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .visiblePartSet {
+    width: 450px;
+    height: 250px;
+  }
+  .information {
+    width: 448px;
+    margin-right: 252px;
+  }
+  .blockInformation {
+    width: 3500px;
+  }
+}
+@media(min-width: 1000px) {
+  .visiblePartConstruction {
+    width: 800px;
+    height: 400px;
+  }
+  nav {
+    width: 240px;
+    height: 190px;
+    left: 550px;
+  }
+  .constructionSelect {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .visiblePartSet {
+    width: 450px;
+    height: 250px;
+    margin-top: 40px;
+  }
+  .information {
+    width: 448px;
+    margin-right: 352px;
+  }
+  .blockInformation {
+    width: 4000px;
+  }
+  .moveBtn {
+    margin-top: 20px;
+  }
+}

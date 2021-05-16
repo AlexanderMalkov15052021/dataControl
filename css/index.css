@@ -1,0 +1,39 @@
+#paswdMaster, #paswdSupervisor, input[name="btnSubmit"] {
+  width: 180px;
+  height: 20px;
+  margin: 0 auto;
+  padding: 0;
+  border: 1px solid #911e42;
+  margin-bottom: 5px;
+  outline: none;
+  border-radius: 25% 0 / 25% 0;
+  transition-duration: 1s;
+}
+.paswd {
+  color: #808080;
+  text-shadow: 1px 1px 1px #911e42;
+}
+#masterSuperForm {
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+input[name="btnSubmit"] {
+  margin-top: 5px;
+  width: 100px;
+  background-color: #ffa000;
+  color: #911e42;
+  text-shadow: 1px 1px #808080;
+}
+#paswdMaster:focus, #paswdSupervisor:focus, input[name="btnSubmit"]:focus {
+  border-radius: 0 25% / 0 25%;
+}
+.inputError {
+  width: 300px;
+  height: auto;
+  color: red;
+  margin: 0 auto;
+  text-align: center;
+}

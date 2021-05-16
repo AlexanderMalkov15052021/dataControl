@@ -1,0 +1,314 @@
+.meshLong {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 300px;
+  height: 100px;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  position: absolute;
+  transform: translateZ(60px);
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshLong:after {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 50px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(-228px) rotateY(-14deg) translateZ(229px) translateX(-23px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshLong:before {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 243px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(-54px) translateX(-78px) rotateY(179.4deg);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshQuarterCircle {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(60px) translateX(-10px) rotateY(-5deg);
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshQuarterCircle:after {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(-115px) rotateY(-5deg) translateZ(115px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshQuarterCircle:before {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(-115px) rotateY(-10deg) translateZ(115px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshеTail {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(42px) translateX(-87px) rotateY(-14deg);
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move; 
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshеTail:after {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(-18.6px) rotateY(-30deg) translateZ(18.6px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshеTail:before {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(-18.6px) rotateY(-60deg) translateZ(18.6px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshDownStretch {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(10px) translateX(164px) rotateY(-30deg) rotateY(180deg);
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshDownStretch:after {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(-18px) rotateY(-30deg) translateZ(18px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshDownStretch:before {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(-15px) rotateY(-60deg) translateZ(20px) rotateY(60deg);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshMotorHalfUpCircle {
+  background-color: transparent;  /* цвет фона */
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(57px) translateX(298px) rotateY(30deg) rotateX(0deg);
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshMotorHalfUpCircle:after {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(-18px) rotateY(30deg) translateZ(18px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+.meshMotorHalfUpCircle:before {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(-18px) rotateY(30deg) translateZ(18px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+.meshMotorHalfDownCircle {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(42px) translateX(307px) rotateY(90deg) rotateX(0deg);
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.meshMotorHalfDownCircle:after {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0; 
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(-18px) rotateY(30deg) translateZ(18px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+.meshMotorHalfDownCircle:before {
+  background-color: transparent;
+  background-image: linear-gradient(45deg, silver 20%, black 20%, transparent 40%),
+  linear-gradient(225deg, silver 20%, black 20%, transparent 40%);
+  background-size: 10px 10px;
+  background-position: 8px 0, 0 0;
+  width: 124px;
+  height: 100px;
+  position: absolute;
+  box-shadow: 0 1px 0 0 black, 0 -1px 0 0 black;
+  transform: translateZ(-30px) rotateY(88deg) translateZ(-30px) translateX(35px) translateZ(-14px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  }
+  @keyframes move {
+    from {
+      background-position: 8px 0, 0 0;
+    }
+    to {
+      background-position: 28px 0, 20px 0;
+    }
+  }

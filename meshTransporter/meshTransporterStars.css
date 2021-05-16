@@ -1,0 +1,144 @@
+.tailStar {
+  background: radial-gradient(transparent 20%, #888888 80%) 0 0;
+  background-position: 3px 3px, 0 0;
+  background-size: 12px 12px;
+  box-shadow: inset 0 0 0 3.7px #888888;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+.tailStar:before, .tailStar:after {
+  content: "";
+  height: 30px;
+  width: 30px;
+  box-shadow: inset 0 0 0 3.7px #888888;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tailStar:before {
+  transform: rotate(30deg);
+}
+.tailStar:after {
+  transform: rotate(60deg);
+}
+.star {
+  background: radial-gradient(black 20%, transparent 30%) 0 0;
+  background-color: #888888;
+  background-size: 15px 15px;
+  background-position: 2px 2px, 0 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.star:after {
+  background: radial-gradient(black 20%, transparent 30%) 0 0;  /* болты в звезде */
+  background-color: #888888;
+  background-size: 15px 15px;
+  background-position: 2px 2px, 0 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateZ(-100.5px);
+  content: "";
+}
+.shaftMesh {
+  background-color: #666666;
+  width: 4px;
+  height: 100px;
+  position: absolute;
+  transform-style: preserve-3d;
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.shaftMesh:after {
+  background-color: #666666;
+  width: 4px;
+  height: 100px;
+  position: absolute;
+  transform: translateZ(-4px) rotateY(40deg) translateZ(4px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.shaftMesh:before {
+  background-color: #666666;
+  width: 4px;
+  height: 100px;
+  position: absolute;
+  transform: translateZ(-4px) rotateY(80deg) translateZ(4px);
+  content: "";
+  animation-duration: 1s;
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.starStretch {
+  width: 12px;
+  height: 12px;
+  background: #777777;
+  position: absolute;
+}
+.starStretch:before, .starStretch:after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  background: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.starStretch:before {
+  transform: rotate(30deg);
+}
+.starStretch:after {
+  transform: rotate(60deg);
+}
+.supportStretch {
+  height: 25px;
+  width: 8px;
+  border-radius: 0 0 0 30%;
+  background-color: #555555;
+  position: absolute;
+  transform: translateZ(21px) translateX(185px) translateY(-16px) rotateZ(90deg);
+  transform-style: preserve-3d;
+}
+.supportStretch::after {
+  height: 25px;
+  width: 8px;
+  border-radius: 0 0 30% 0;
+  background-color: #555555;
+  position: absolute;
+  transform: translateX(107px);
+  content: "";
+}
+.tobeStretch {
+  width: 3px;
+  height: 32px;
+  background-color: #333333;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.tobeStretch:after {
+  width: 3px;
+  height: 32px;
+  background-color: #333333;
+  position: absolute;
+  transform: translateZ(-2px) rotateY(60deg) translateZ(2px);
+  content: "";
+}
+.tobeStretch:before {
+  width: 3px;
+  height: 32px;
+  background-color: #333333;
+  position: absolute;
+  transform: translateZ(-2px) rotateY(120deg) translateZ(2px);
+  content: "";
+}

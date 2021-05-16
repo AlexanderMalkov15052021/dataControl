@@ -1,0 +1,616 @@
+.leftSideLever{
+  width: 40px;
+  height: 8px;
+  background-color: #808080;
+  position: absolute;
+  animation-name: leftSideLeverAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-style: preserve-3d;
+  transform: translateX(-40px) translateY(-1px) translateZ(8px) rotateX(90deg);
+}
+.rightSideLever{
+  width: 40px;
+  height: 8px;
+  background-color: #808080;
+  position: absolute;
+  animation-name: rightSideLeverAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-style: preserve-3d;
+  transform: translateX(-40px) translateY(-1px) translateZ(8px) translateY(-4px) rotateX(90deg);
+}
+.upSideLever{
+  width: 40px;
+  height: 4px;
+  background-color: #808080;
+  position: absolute;
+  animation-name: upSideLeverAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-style: preserve-3d;
+  transform: translateX(-40px) translateY(-1px) translateZ(12px);
+}
+.frameBunker {
+  background-color: #555555;
+  width: 6px;
+  height: 100px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.frameBunker:after {
+  background-color: #444444;
+  width: 3px;
+  height: inherit;
+  position: absolute;
+  transform: translateX(-1.5px) translateZ(-1.1px) rotateY(90deg);
+  content: "";
+}
+.frameBunker:before {
+  background-color: #303030;
+  width: 3px;
+  height: inherit;
+  position: absolute;
+  transform: translateX(4px) translateZ(-1.5px) rotateY(90deg);
+  content: "";
+}
+.reducerBunker {
+  background-color: #666666;
+  width: 40px;
+  height: 15px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.reducerBunker:after {
+  background-color: #696969;
+  width: inherit;
+  height: 25px;
+  position: absolute;
+  transform: translateY(2px) translateZ(-12.5px) rotateX(90deg);
+  content: "";
+}
+
+.reducerBunker:before {
+  background-color: #777777;
+  width: 25px;
+  height: inherit;
+  position: absolute;
+  transform: translateX(-12.4px) translateZ(-12.4px) rotateY(90deg);
+  content: "";
+}
+.casingBunker {
+  background-color: #333333;
+  width: 34px;
+  height: 11px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.casingBunker:after {
+  background-color: #333333;
+  width: 20px;
+  height: 8px;
+  position: absolute;
+  transform: translateX(-6px) translateY(-14px) rotateZ(90deg);
+  content: "";
+}
+.casingBunker:before {
+  background-color: #333333;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transform: translateX(14px) translateY(-20px) rotateZ(90deg);
+  content: "";
+}
+.casingUpFrontBunker {
+  background-color: #444444;
+  width: 34px;
+  height: 8.7px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.casingUpFrontBunker:after {
+  background-color: #555555;
+  width: 30px;
+  height: 8px;
+  position: absolute;
+  transform: translateX(-14.5px) translateZ(-15px) rotateY(90deg);
+  content: "";
+}
+.motorBunker {
+  background-color: #0000b0;
+  width: 4.7px;
+  height: 20px;
+  box-shadow: inset 0 -5px 0 0 #0000f0;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.motorBunker:after {
+  background-color: #0000b0;
+  width: 4.7px;
+  height: 20px;
+  box-shadow: inset 0 -5px 0 0 #0000f0;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-8px) rotateY(30deg) translateZ(8px);
+  content: "";
+}
+.motorBunker:before {
+  background-color: #0000b0;
+  width: 4.7px;
+  height: 20px;
+  box-shadow: inset 0 -5px 0 0 #0000f0;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-8px) rotateY(60deg) translateZ(8px) ;
+  content: "";
+}
+
+.shaftBunker {
+  background-color: #444444;
+  width: 3.8px;
+  height: 20px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.shaftBunker:after {
+  background-color: #444444;
+  width: 3.8px;
+  height: 20px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-3px) rotateY(60deg) translateZ(3px);
+  content: ""; 
+}
+.shaftBunker:before {
+  background-color: #444444;
+  width: 3.8px;
+  height: 20px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-3px) rotateY(120deg) translateZ(3px) ;
+  content: "";
+}
+.buncerMotorCap {
+  background-color: #0000f0;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.bunkerMotorSupport {
+  background-color: #666666;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.bunkerMotorSupport:after {
+  background-color: #777777;
+  width: inherit;
+  height: 10px;
+  position: absolute;
+  transform: translateY(-4.7px) translateZ(-5px) rotateX(90deg);
+  content: "";
+}
+.bunkerMotorSupport:before {
+  background-color: #777777;
+  width: 10px;
+  height: inherit;
+  position: absolute;
+  transform: translateX(-4.7px) translateZ(-5px) rotateY(90deg);
+  content: "";
+}
+.bunkerMotorBox {
+  background-color: #0000e0;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.bunkerMotorBox:after {
+  background-color: #0000e0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  transform: translateY(-2.9px) translateZ(-3px) rotateX(90deg);
+  content: "";
+}
+.bunkerMotorBox:before {
+  background-color: #0000e0;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  transform: translateX(-2.9px) translateZ(-3px) rotateY(90deg);
+  content: "";
+}
+.bunkerWiring {
+  width: 1.8px;
+  height: 15px;
+  background-color: #555555;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.bunkerWiring:before {
+  width: 1.8px;
+  height: 15px;
+  background-color: #555555;
+  position: absolute;
+  content: "";
+  transform: translateZ(-1.5px) rotateY(60deg) translateZ(1.5px);
+}
+.bunkerWiring:after {
+  width: 1.8px;
+  height: 15px;
+  background-color: #555555;
+  position: absolute;
+  content: "";
+  transform: translateZ(-1.5px) rotateY(120deg) translateZ(1.5px);
+}
+.bunkerShiftWiring {
+  width: 1.8px;
+  height: 6.4px;
+  background-color: #555555;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.bunkerShiftWiring:before {
+  width: 1.8px;
+  height: 6.4px;
+  background-color: #555555;
+  position: absolute;
+  content: "";
+  transform: translateZ(-1.5px) rotateY(60deg) translateZ(1.5px);
+}
+.bunkerShiftWiring:after {
+  width: 1.8px;
+  height: 6.4px;
+  background-color: #555555;
+  position: absolute;
+  content: "";
+  transform: translateZ(-1.5px) rotateY(120deg) translateZ(1.5px);
+}
+.wrapperFixingPlate {
+  position: absolute;
+  animation-name: fixingPlateAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transform-style: preserve-3d;
+}
+.fixingPlate {
+  background-color: #808080;
+  width: 5px;
+  height: 8px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateX(-2px) translateY(-3px) translateZ(8px) rotateY(120deg) translateZ(4px);
+}
+.fixingPlate:after {
+  background-color: #808080;
+  width: 5px;
+  height: 8px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-6px) rotateY(40deg) translateZ(6px) ;
+  content: "";
+}
+.fixingPlate:before {
+  background-color: #808080;
+  width: 5px;
+  height: 8px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-6px) rotateY(80deg) translateZ(6px) ;
+  content: "";
+}
+.fixingPlateCap {
+  background-color: #555555;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.fixingPlateCap:after {
+  background-color: #555555;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  transform: translateZ(7.5px);
+  content: "";
+}
+.bunkerPlate {
+  background-color: #777777;
+  width: 75px;
+  height: 60px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.frameBunkerDiagonalRight {
+  background-color: #555555;
+  width: 6px;
+  height: 88px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.frameBunkerDiagonalRight:after {
+  background-color: #444444;
+  width: 3px;
+  height: inherit;
+  position: absolute;
+  transform: translateX(-1.5px) translateZ(-1px) rotateY(90deg);
+  content: "";
+}
+.frameBunkerDiagonalRight:before {
+  background-color: #303030;
+  width: 3px;
+  height: 73px;
+  position: absolute; 
+  transform: translateX(4px) translateY(4px) translateZ(-1.5px) rotateY(90deg);
+  content: "";
+}
+.frameBunkerDiagonalLeft {
+  background-color: #555555;
+  width: 6px;
+  height: 88px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.frameBunkerDiagonalLeft:after {
+  background-color: #444444;
+  width: 3px;
+  height: inherit;
+  position: absolute;
+  transform: translateX(-1.5px) translateZ(1px) rotateY(90deg);
+  content: "";
+}
+.frameBunkerDiagonalLeft:before {
+  background-color: #303030;
+  width: 3px;
+  height: 73px;
+  position: absolute;
+  transform: translateX(4px) translateY(4px) translateZ(1.5px) rotateY(90deg);
+  content: "";
+}
+.bunkerWalls {
+  width: 120px;
+  height: 90px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.bunkerWalls:before {
+  width: 60px;
+  height: 98px;
+  background-color: #999999;
+  position: absolute;
+  transform: translateX(-3px) translateY(-4px) translateZ(30px) rotateY(90deg) rotateX(-23deg);
+  content: "";
+}
+.bunkerWalls:after {
+  width: 120px;
+  height: 90px;
+  position: absolute;
+  transform: translateZ(59.5px);
+  background-image: linear-gradient(-67deg, #888888 71%, transparent 71%);
+  content: "";
+}
+.bunkerRoller {
+  background-color: #888888;
+  width: 4px;
+  height: 60px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.bunkerRoller:after {
+  background-color: #888888;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-4px) rotateY(40deg) translateZ(4px);
+  content: "";
+}
+.bunkerRoller:before {
+  background-color: #888888;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-4px) rotateY(80deg) translateZ(4px);
+  content: "";
+}
+.gate {
+  background-color: #909090;
+  width: 60px;
+  height: 59px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.gate:before {
+  background-color: #808080;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  transform: translateX(43px) translateZ(16px);
+  content: "";
+}
+.gate:after {
+  background-color: #808080;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  transform: translateX(43px) translateY(55.4px) translateZ(16px);
+  content: "";
+}
+.gateLever {
+  background-color: #777777;
+  width: 4px;
+  height: 16px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.gateLever:after {
+  background-color: #606060;
+  width: 3px;
+  height: inherit;
+  position: absolute;
+  transform: translateX(-1.4px) translateZ(-1.5px) rotateY(90deg);
+  content: "";
+}
+.gateLever:before {
+  background-color: #505050;
+  width: 3px;
+  height: inherit;
+  position: absolute;
+  transform: translateX(2px) translateZ(-1.5px) rotateY(90deg);
+  content: "";
+}
+.gateLeverRound {
+  background-color: #808080;
+  width: 3.2px;
+  height: 60px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.gateLeverRound:after {
+  background-color: #808080;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-2.5px) rotateY(60deg) translateZ(2.5px);
+  content: "";
+}
+.gateLeverRound:before {
+  background-color: #808080;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-2.5px) rotateY(120deg) translateZ(2.5px);
+  content: "";
+}
+.gateControl {
+  background-color: #888888;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.gateControl:after {
+  background-color: #808080;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  transform: translateY(-2.9px) translateZ(-3px) rotateX(90deg);
+  content: "";
+}
+.gateControl:before {
+  background-color: #757575;
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  transform: translateX(-2.9px) translateZ(-3px) rotateY(90deg);
+  content: "";
+}
+.gateControlLever {
+  background-color: #808080;
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.gateControlLever:after {
+  background-color: #888888;
+  width: 3px;
+  height: 12px;
+  position: absolute;
+  transform: translateY(-5.7px) translateZ(-6px) rotateX(90deg);
+  content: "";
+}
+.gateControlLever:before {
+  background-color: #757575;
+  width: 12px;
+  height: 3px;
+  position: absolute;
+  transform: translateX(-6px) translateZ(-6px) rotateY(90deg);
+  content: "";
+}
+@keyframes fixingPlateAnimation {
+  from {
+    transform: translateX(0px) translateZ(2px);
+  }
+  25% {
+    transform: translateX(-8px) translateZ(2px);
+  }
+  50% {
+    transform: translateX(0px) translateZ(2px);
+  }
+  75% {
+    transform: translateX(8px) translateZ(2px);
+  }
+  to {
+    transform: translateX(0px) translateZ(2px);
+  }
+}
+@keyframes leftSideLeverAnimation {
+  from {
+    transform: translateX(-45px) translateY(-1px) translateZ(14px) rotateX(90deg) rotateZ(0deg) translateX(0px) translateY(0px);
+  }
+  25% {
+    transform: translateX(-45px) translateY(-1px) translateZ(14px) rotateX(90deg) rotateZ(-10deg) translateX(-8px) translateY(0px);
+  }
+  50% {
+    transform: translateX(-45px) translateY(-1px) translateZ(14px) rotateX(90deg) rotateZ(-20deg) translateX(0px) translateY(4px);
+  }
+  75% {
+    transform: translateX(-45px) translateY(-1px) translateZ(14px) rotateX(90deg) rotateZ(-10deg) translateX(8px) translateY(4px);
+  }
+  to {
+    transform: translateX(-45px) translateY(-1px) translateZ(14px) rotateX(90deg) rotateZ(0deg) translateX(0px) translateY(0px);
+  }
+}
+@keyframes rightSideLeverAnimation {
+  from {
+    transform: translateX(-45px) translateY(-1px) translateZ(14px) translateY(-4px) rotateX(90deg) rotateZ(0deg) translateX(0px)
+translateY(0px);
+  }
+  25% {
+    transform: translateX(-45px) translateY(-1px) translateZ(14px) translateY(-4px) rotateX(90deg) rotateZ(-10deg) translateX(-8px)
+translateY(0px);
+  }
+  50% {
+    transform: translateX(-45px) translateY(-1px) translateZ(14px) translateY(-4px) rotateX(90deg) rotateZ(-20deg) translateX(0px)
+translateY(4px);
+  }
+  75% {
+    transform: translateX(-45px) translateY(-1px) translateZ(14px) translateY(-4px) rotateX(90deg) rotateZ(-10deg) translateX(8px)
+translateY(4px);
+  }
+  to {
+    transform: translateX(-45px) translateY(-1px) translateZ(14px) translateY(-4px) rotateX(90deg) rotateZ(0deg) translateX(0px)
+translateY(0px);
+  }
+}
+@keyframes upSideLeverAnimation {
+  from {
+    transform: translateX(-45px) translateY(-1px) translateZ(18px) rotateZ(0deg) translateX(0px) translateZ(0px);
+  }
+  25% {
+    transform: translateX(-45px) translateY(-1px) translateZ(18px) rotateY(10deg) translateX(-8px) translateZ(0px);
+  }
+  50% {
+    transform: translateX(-45px) translateY(-1px) translateZ(18px) rotateY(20deg) translateX(0px) translateZ(4px);
+  }
+  75% {
+    transform: translateX(-45px) translateY(-1px) translateZ(18px) rotateY(10deg) translateX(8px) translateZ(4px);
+  }
+  to {
+    transform: translateX(-45px) translateY(-1px) translateZ(18px) rotateY(0deg) translateX(0px) translateZ(0px);
+  }
+}

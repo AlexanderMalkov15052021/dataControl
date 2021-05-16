@@ -1,0 +1,256 @@
+.informationMenu {
+  width: 150px;
+  height: 229px;
+  margin-left: -154px;
+  transition-property: margin-left;
+  position: fixed;
+  background-color: #808080;
+  font-size: 15px;
+  border-radius: 0 0 14% 0;
+  z-index: 4;
+}
+.blocksContainer {
+  width: 100%;
+}
+.activeBlocksContainer {
+  width: 340px;
+  margin-left: 150px;
+}
+label {
+  letter-spacing: 1.1px;
+}
+@media(min-width: 600px) {
+  .activeBlocksContainer {
+    width: 600px;
+  }
+}
+.menuButton {
+  width: 34px;
+  height: 30px;
+  background-color: #808080;
+  box-shadow: inset -1px -2px #911e42;
+  outline: none;
+  border: transparent;
+  position: absolute;
+  border-radius: 0 20% 20% 0;
+  left: 149px;
+  top: 0;
+  z-index: 4;
+}
+.menuBorder {
+  width: 150px;
+  height: 201px;
+  position: absolute;
+  border-radius: 0 0 15% 0;
+  top: 29px;
+  box-shadow: inset -2px -3px #911e42;
+  z-index: -1;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+.language {
+  cursor: pointer;
+  border-radius: 20%;
+  border: 0;
+  outline: none;
+  background-color: #ffa000;
+  margin: 0 0 5px 2px;
+  color: white;
+  box-shadow: 1px 1px 1px #911e42, -1px -1px 1px #911e42;
+  text-shadow: 1px 1px 1px black;
+}
+.amountOfChange {
+  margin-left: 2px;
+  cursor: pointer;
+  color: #ffa000;
+  text-shadow: 1px 1px 1px black;
+}
+.settingName {
+  cursor: normal;
+  color: #eee;
+  text-shadow: 1px 1px 1px #911e42;
+}
+input[type=radio]:checked + label {
+  color: #911e42;
+  text-shadow: 1px 1px 1px white;
+}
+input[type=radio] {
+  display: none;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 118px;
+  box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+  background-color: #ffa000;
+  background-image: linear-gradient(45deg, transparent 20%, #911e42 20% 40%, transparent 40%);
+  background-size: 16px 10px;
+  margin-left: 5px;
+  border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 118px;
+  box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+  background-color: #ffa000;
+  background-image: linear-gradient(45deg, transparent 20%, #911e42 20% 40%, transparent 40%);
+  background-size: 16px 10px;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+}
+input[type=range][data-selector="2"]::-webkit-slider-thumb {
+  background-image: linear-gradient(45deg, transparent 30%, #a22f53 30% 30%, transparent 45%),
+  linear-gradient(135deg, transparent 30%, #a22f53 30% 30%, transparent 45%);
+  background-size: 30px 30px;
+  background-position: 4px -7px, -3px 1px;
+  height: 13.4px;
+  width: 20px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+  transition-duration: 1s;
+}
+input[type=range]::-webkit-slider-thumb {
+  background-image: linear-gradient(45deg, transparent 30%, #911e42 30% 30%, transparent 45%),
+  linear-gradient(135deg, transparent 30%, #911e42 30% 30%, transparent 45%);
+  background-size: 30px 30px;
+  background-position: 0px -4px, 0px 0px;
+  height: 13.4px;
+  width: 20px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+  transition-duration: .3s;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background-image: linear-gradient(45deg, transparent 20%, #911e42 20% 40%, transparent 40%);
+  background-size: 16px 10px;
+}
+input[type=range]::-moz-range-track {
+  width: 118px;
+  box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+  background-color: #ffa000;
+  background-image: linear-gradient(45deg, transparent 20%, #911e42 20% 40%, transparent 40%);
+  background-size: 16px 10px;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+  border-radius: 10% 0 0 50% / 50% 0 0 50%;
+}
+input[type=range]::-moz-range-thumb {
+  background-image: linear-gradient(45deg, transparent 30%, #911e42 30% 30%, transparent 45%),
+  linear-gradient(135deg, transparent 30%, #911e42 30% 30%, transparent 45%);
+  background-size: 30px 30px;
+  background-position: 0px -4px, 0px 0px;
+  height: 13.4px;
+  width: 20px;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 118px;
+  box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+  background-color: #ffa000;
+  background-image: linear-gradient(45deg, transparent 20%, #911e42 20% 40%, transparent 40%);
+  background-size: 16px 10px;
+  height: 9px;
+  cursor: pointer;
+  animate: 0.2s;
+  border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background-image: linear-gradient(45deg, transparent 20%, #911e42 20% 40%, transparent 40%);
+  background-size: 16px 10px;
+}
+input[type=range]::-ms-fill-upper {
+  background-image: linear-gradient(45deg, transparent 20%, #911e42 20% 40%, transparent 40%);
+  background-size: 16px 10px;
+}
+input[type=range]::-ms-thumb {
+  background-image: linear-gradient(45deg, transparent 30%, #911e42 30% 30%, transparent 45%),
+  linear-gradient(135deg, transparent 30%, #911e42 30% 30%, transparent 45%);
+  background-size: 30px 30px;
+  background-position: 0px -4px, 0px 0px;
+  height: 13.4px;
+  width: 20px;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background-image: linear-gradient(45deg, transparent 20%, #911e42 20% 40%, transparent 40%);
+  background-size: 16px 10px;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background-image: linear-gradient(45deg, transparent 20%, #911e42 20% 40%, transparent 40%);
+  background-size: 16px 10px;
+}
+.activeMenu {
+  margin-left: 0;
+}
+.menuShadow {
+  background-color: #ddd;
+  transition-duration: 1s;
+}
+.animatedElements {
+  width: 20px;
+  height: 5px;
+  position: absolute;
+  background-color: #ffa000;
+  box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+  margin-top: -3px;
+  margin-left: 9px;
+  border-radius: 30%;
+  transform-style: preserve-3d;
+  transition-property: margin-top, transform;
+}
+.animatedElements:after {
+  width: 20px;
+  height: 5px;
+  background-color: white;
+  box-shadow: 1px 1px 1px #911e42, -1px -1px 1px #911e42;
+  margin-top: 8px;
+  margin-left: -10px;
+  position: absolute;
+  border-radius: 30%;
+  content: "";
+  transition-property: margin-top, transform;
+  transition-duration: inherit;
+  transition-delay: .7s, 0s;
+}
+.animatedElements:before {
+  width: inherit;
+  height: inherit;
+  background-color: #911e42;
+  box-shadow: 1px 1px 1px white, -1px -1px 1px white;
+  margin-top: -8px;
+  margin-left: -10px;
+  position: absolute;
+  border-radius: 30%;
+  content: "";
+  transition-property: margin-top, transform;
+  transition-duration: inherit;
+  transition-delay: .7s, 0s;
+}
+div.animatedElements.animatedElementsCross:after {
+  margin-top: 0;
+  transform: rotateZ(90deg);
+  transition-delay: 0s, .7s;
+}
+div.animatedElements.animatedElementsCross:before {
+  margin-top: 0;
+  transition-delay: 0s, .7s;
+}
+.animatedElements.animatedElementsCross {
+  transform: rotateZ(45deg);
+  transition-delay: 0s, .7s;
+}
+.menuContainer input {
+  cursor: pointer;
+}

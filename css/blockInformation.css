@@ -1,0 +1,295 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: emoji;
+  -webkit-font-family: emoji;
+  -moz-font-family: emoji;
+  -o-font-family: emoji;
+}
+.columnInfo {
+  width: 35.7px;
+  border: 1px solid #911e42;
+  height: 183px;
+  float: left;
+  border-radius: 12% 14% 7% 7%;
+}
+.arrowPlus, .arrowMinus {
+  margin: 0 auto;
+  border-radius: 20%;
+  cursor: pointer;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  outline: none;
+  display: block;
+  border: transparent;
+  position: relative;
+  color: #911e42;
+}
+.arrowPlus:after {
+  border: 1px solid #911e42;
+  background-color: #ffa000;
+  content: "+";
+  width: 16px;
+  height: 16px;
+  border-radius: 40%;
+  position: absolute;
+  text-align: center;
+  text-align: bottom;
+  margin-left: -9px;
+  margin-top: 12.8px;
+}
+.arrowMinus:after {
+  border: 1px solid #911e42;
+  background-color: #ffa000;
+  content: "-";
+  width: 16px;
+  height: 16px;
+  border-radius: 40%;
+  position: absolute;
+  text-align: center;
+  text-align: bottom;
+  margin-left: -9px;
+  margin-top: -31px;
+}
+.arrowMinus {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-top: 30px solid #ffa000;
+  border-right: 15px solid transparent;
+}
+.arrowPlus {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-bottom: 30px solid #ffa000;
+  border-right: 15px solid transparent;
+}
+.borderChangeHertz {
+  width: 341px;
+  height: 40px;
+  margin: 0 auto;
+}
+.frequencyNow, .changeHertz, .frequencyEscape {
+  margin: 0 auto;
+  border-radius: 20% 0 20% 0;
+  position: relative;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  display: block;
+  background-image: radial-gradient(#808080 30%, #911e42 50%, #808080 60%, transparent 75%);
+  border: transparent;
+  color: black;
+  text-shadow: 1px 1px 1px white;
+}
+.selectColor {
+  background-image: radial-gradient(red 30%, #911e42 50%, red 60%, transparent 75%);
+}
+.frequencyNow {
+  background-image: radial-gradient(#808080 30%, #911e42 50%, #808080 75%, #808080 80%);
+}
+.frequencyEscape {
+  margin-left: 2.85px;
+  position: absolute;
+  background-image: radial-gradient(#808080 30%, #911e42 50%, #808080 75%, #808080 80%);
+}
+.changeHertz {
+  border-radius: 50%;
+  z-index: 2;
+  width: 33.8px;
+  height: 33.8px;
+  color: black;
+  text-shadow: 0 0 0 transparent;
+}
+.escapeHertz {
+  position: absolute;
+  text-align: center;
+  background-image: radial-gradient(#808080 30%, #911e42 50%, #808080 60%, transparent 75%);
+  width: 33.8px;
+  height: 33.8px;
+  outline: none;
+  display: block;
+  border: transparent;
+  border-radius: 50%;
+  z-index: 1;
+  margin-left: .95px;
+  color: black;
+  text-shadow: 0 0 0 transparent;
+}
+.escapeAndNow {
+  margin: 0 auto;
+  width: 48px;
+}
+.controlBlock {
+  margin-right: 5px;
+  float: left;
+  text-align: center;
+  width: 98px;
+}
+.hertzSetButton {
+  margin-top: 3px;
+}
+.FEscapeAndNow {
+  width: 341px;
+  height: 40px;
+  margin: 0 auto;
+}
+.borderArrowPlus {
+  width: 340px;
+  height: 44px;
+  margin: 0 auto;
+}
+.borderArrowMinus {
+  width: 340px;
+  height: 44px;
+  margin: 0 auto;
+}
+.cAndFConfirmationButton {
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+  outline: none;
+  border: transparent;
+  border-radius: 20%;
+  background-color: #ffa000;
+  box-shadow: 1px 1px 1px #911e42, -1px -1px 1px #911e42;
+  cursor: pointer;
+  color: #911e42;
+  text-shadow: 1px 1px 1px #808080;
+}
+.borderCAndFConfirmationButton {
+  width: 340px;
+  height: 30px;
+  margin: 0 auto;
+}
+.borderPositionName {
+  width: 341px;
+  height: 32px;
+  margin: 0 auto;
+}
+.positionName {
+  width: 30px;
+  height: 17px;
+  text-align: center;
+  background-color: #911e42;
+  margin: 0 auto;
+  border-radius: 6% 6% 20% 20%;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+}
+@media(min-width: 600px) {
+  .columnInfo {
+    width: 47.7px;
+    height: 246px;
+  }
+  .cAndFConfirmationButton {
+    width: 40px;
+    height: 35px;
+  }
+  .arrowPlus, .arrowMinus {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .changeHertz {
+    width: 35px;
+    height: 35px;
+  }
+  .escapeHertz {
+    width: 35px;
+    height: 35px;
+    margin-left: 6.3px;
+  }
+  .arrowMinus {
+    border-left: 20px solid transparent;
+    border-top: 40px solid #ffa000;
+    border-right: 20px solid transparent;
+  }
+  .arrowPlus {
+    border-left: 20px solid transparent;
+    border-bottom: 40px solid #ffa000;
+    border-right: 20px solid transparent;
+  }
+  .arrowPlus:after {
+    width: 24px;
+    height: 24px;
+    margin-left: -13.1px;
+    margin-top: 16px;
+  }
+  .arrowMinus:after {
+    width: 24px;
+    height: 24px;
+    margin-left: -13.1px;
+    margin-top: -41px;
+  }
+  .frequencyNow, .changeHertz, .frequencyEscape {
+    width: 35px;
+    height: 35px;
+  }
+  .frequencyEscape {
+    margin-left: 6.3px;
+  }
+  .positionName {
+    width: 36px;
+    height: 20px;
+  }
+}
+@media(min-width: 1000px) {
+  .columnInfo {
+    width: 47.7px;
+    height: 246px;
+  }
+  .cAndFConfirmationButton {
+    width: 40px;
+    height: 35px;
+  }
+  .arrowPlus, .arrowMinus {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .changeHertz {
+    width: 35px;
+    height: 35px;
+  }
+  .escapeHertz {
+    width: 35px;
+    height: 35px;
+    margin-left: 6.3px;
+  }
+  .arrowMinus {
+    border-left: 20px solid transparent;
+    border-top: 40px solid #ffa000;
+    border-right: 20px solid transparent;
+  }
+  .arrowPlus {
+    border-left: 20px solid transparent;
+    border-bottom: 40px solid #ffa000;
+    border-right: 20px solid transparent;
+  }
+  .arrowPlus:after {
+    width: 24px;
+    height: 24px;
+    margin-left: -13.1px;
+    margin-top: 16px;
+  }
+  .arrowMinus:after {
+    width: 24px;
+    height: 24px;
+    margin-left: -13.1px;
+    margin-top: -41px;
+  }
+  .frequencyNow, .changeHertz, .frequencyEscape {
+    width: 35px;
+    height: 35px;
+  }
+  .positionName {
+    width: 36px;
+    height: 20px;
+  }
+}

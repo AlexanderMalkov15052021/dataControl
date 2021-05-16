@@ -1,0 +1,741 @@
+.seam {
+  background-image: linear-gradient(-70deg, silver 2%, black 3%, silver 5%, transparent 12%);
+  background-size: 3px 150px;
+  background-position: 0 30px, 0 0;
+  height: 30px;
+  width: 50px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(15px) translateX(-25px) translateY(-170px);
+  animation-name: seam;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.beltTransporter {
+  height: 295px;
+  width: 50px;
+  background-color: #333333;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(15px) translateX(-25px) translateY(-150px);
+}
+.beltTransporter:after {
+  height: 300px;
+  width: 50px;
+  background-color: #393939;
+  position: absolute;
+  transform: translateZ(-30px);
+  content: "";
+}
+.drumExternal {
+  height: 60px;
+  width: 5.7px;
+  background-color: #333333;
+  position: absolute;
+  transform-style: preserve-3d;
+  box-shadow: inset 0 5px 0 0 brown, inset 0 -5px 0 0 brown;
+}
+.drumExternal:after {
+  transform: translateZ(-14.8px) rotateY(20deg) translateZ(14.8px);
+  content: "";
+  height: 60px;
+  width: 5.7px;
+  background-color: #333333;
+  box-shadow: inset 0 5px 0 0 brown, inset 0 -5px 0 0 brown;
+  position: absolute;
+}
+.drumExternal:before {
+  transform: translateZ(-14.8px) rotateY(40deg) translateZ(14.8px);
+  content: "";
+  height: 60px;
+  width: 5.7px;
+  background-color: #333333;
+  position: absolute;
+  box-shadow: inset 0 5px 0 0 brown, inset 0 -5px 0 0 brown;
+}
+.drumInternal {
+  height: 60px;
+  width: 5.7px;
+  background-color: brown;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.drumInternal:after {
+  transform: translateZ(-14.8px) rotateY(20deg) translateZ(14.8px);
+  content: "";
+  height: 60px;
+  width: 5.7px;
+  background-color: brown;
+  position: absolute;
+}
+.drumInternal:before {
+  transform: translateZ(-14.8px) rotateY(40deg) translateZ(14.8px);
+  content: "";
+  height: 60px;
+  width: 5.7px;
+  background-color: brown;
+  position: absolute;
+}
+.footingSupplyAxlebox {
+  background-color: #773300;
+  width: 18px;
+  height: 6px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-5px) translateY(143px) translateX(-54.4px) rotateX(-90deg) rotateY(90deg);
+}
+.footingSupplyAxlebox:after {
+  background-color: #774444;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  content: "";
+  transform: rotateY(90deg) translateZ(-2.9px) translateX(-2.9px);
+}
+.footingSupplyAxlebox:before {
+  background-color: #773300;
+  width: 18px;
+  height: 5.7px;
+  position: absolute;
+  content: "";
+  transform: rotateX(90deg) translateZ(2.8px) translateY(3px);
+}
+.halfCircleSupplyAxlebox {
+  background-color: #993300;
+  width: 4.8px;
+  height: 6px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.halfCircleSupplyAxlebox:after {
+  background-color: #993300;
+  width: 4.8px;
+  height: 6px;
+  position: absolute;
+  transform: translateZ(-6px) rotateY(40deg) translateZ(6px);
+  content: "";
+}
+.halfCircleSupplyAxlebox:before {
+  background-color: #993300;
+  width: 4.8px;
+  height: 6px;
+  position: absolute;
+  transform: translateZ(-6px) rotateY(80deg) translateZ(6px);
+  content: "";
+}
+.recapSupplyAxlebox {
+  width: 12.5px;
+  height: 12.5px;
+  position: absolute;
+  background-color: #663300;
+  border-radius: 50%;
+  transform: rotateX(-90deg) rotateY(90deg) translateZ(-51.7px) translateX(-138.8px);
+}
+.circleDrum {
+  width: 29.5px;
+  height: 29.5px;
+  background-color: #990000;
+  border-radius: 50%;
+  position: absolute;
+  transform: translateY(130px) translateX(-41px) rotateY(90deg);
+}
+.edgeDrum {
+  height: 4px;
+  width: 5.7px;
+  background-color: brown;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.edgeDrum:after {
+  transform: translateZ(-14.8px) rotateY(20deg) translateZ(14.8px);
+  content: "";
+  height: 4px;
+  width: 5.7px;
+  background-color: brown;
+  position: absolute;
+}
+.edgeDrum:before {
+  transform: translateZ(-14.8px) rotateY(40deg) translateZ(14.8px);
+  content: "";
+  height: 4px;
+  width: 5.7px;
+  background-color: brown;
+  position: absolute;
+}
+.shaftSupply {
+  background-color: #666666;
+  width: 3px;
+  height: 120px;
+  position: absolute;
+  transform-style: preserve-3d;
+  box-shadow: inset 0 -2px 0 0 #444444;
+}
+.shaftSupply:after {
+  background-color: #666666;
+  width: 3px;
+  height: 120px;
+  position: absolute;
+  transform: translateZ(-3px) rotateY(40deg) translateZ(3px);
+  content: "";
+  box-shadow: inset 0 -2px 0 0 #444444;
+}
+.shaftSupply:before {
+  background-color: #666666;
+  width: 3px;
+  height: 120px;
+  position: absolute;
+  transform: translateZ(-3px) rotateY(80deg) translateZ(3px);
+  content: "";
+  box-shadow: inset 0 -2px 0 0 #444444;
+}
+.shaftSupplyTail {
+  background-color: #666666;
+  width: 3px;
+  height: 90px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.shaftSupplyTail:after {
+  background-color: #666666;
+  width: 3px;
+  height: 90px;
+  position: absolute;
+  transform: translateZ(-3px) rotateY(40deg) translateZ(3px);
+  content: "";
+}
+.shaftSupplyTail:before {
+  background-color: #666666;
+  width: 3px;
+  height: 90px;
+  position: absolute;
+  transform: translateZ(-3px) rotateY(80deg) translateZ(3px);
+  content: "";
+}
+.supportSupplyAlong {
+  background-color: #555555;
+  width: 12px;
+  height: 340px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateY(-170px) translateX(-52px) translateZ(-13.7px) rotateY(-90deg);
+}
+.supportSupplyAlong:after {
+  background-color: #444444;
+  width: 6px;
+  height: 340px;
+  position: absolute;
+  transform: translateX(-2.8px) translateZ(-3px) rotateY(90deg);
+  content: "";
+}
+.supportSupplyAlong:before {
+  background-color: #444444;
+  width: 6px;
+  height: 340px;
+  position: absolute;
+  transform: translateX(8.7px) translateZ(-3px) rotateY(90deg);
+  content: "";
+}
+.supportSupplyAcross {
+  background-color: #555555;
+  width: 12px;
+  height: 92px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateY(-215.6px) translateX(-6px) translateZ(-13.7px) rotateY(90deg) rotateX(-90deg);
+}
+.supportSupplyAcross:after {
+  background-color: #444444;
+  width: 6px;
+  height: 92px;
+  position: absolute;
+  transform: translateX(-2.8px) translateZ(-3px) rotateY(90deg);
+  content: "";
+}
+.supportSupplyAcross:before {
+  background-color: #444444;
+  width: 6px;
+  height: 92px;
+  position: absolute;
+  transform: translateX(8.7px) translateZ(-3px) rotateY(90deg);
+  content: "";
+}
+.supportRoller {
+  background-color: brown;
+  width: 8px;
+  height: 92px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateX(-4px) translateY(43.6px) translateZ(-7.7px) rotateZ(90deg) rotateX(0deg);
+}
+.supportRoller:after {
+  background-color: brown;
+  width: 8px;
+  height: 30px;
+  position: absolute;
+  transform: translateY(-15px) translateZ(14.7px) rotateX(90deg);
+  content: "";
+}
+.supportRoller:before {
+  background-color: brown;
+  width: 8px;
+  height: 30px;
+  position: absolute;
+  transform: translateY(77px) translateZ(14.7px) rotateX(90deg);
+  content: "";
+}
+.supportRollerSlant {
+  background-color: brown;
+  width: 8px;
+  height: 10px;
+  border-radius: 0 0 25% 25%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateX(38.7px) translateY(84.4px) translateZ(25.2px) rotateZ(90deg) rotateX(45deg);
+}
+.supportRollerSlant:before {
+  background-color: brown;
+  width: 8px;
+  height: 10px;
+  border-radius: 0 0 25% 25%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-60.3px) translateY(60.3px) rotateX(90deg);
+  content: "";
+}
+.roller {
+  background-color: #990000;
+  width: 3.5px;
+  height: 30px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.roller:after {
+  background-color: #990000;
+  width: 3.5px;
+  height: 30px;
+  position: absolute;
+  transform: translateZ(-4px) rotateY(40deg) translateZ(4px);
+  content: "";
+}
+.roller:before {
+  background-color: #990000;
+  width: 3.5px;
+  height: 30px;
+  position: absolute;
+  transform: translateZ(-4px) rotateY(80deg) translateZ(4px);
+  content: "";
+}
+.supportRollerCorner {
+  width: 8px;
+  height: 25px;
+  background-color: #770000;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateX(20.2px) translateY(77px) translateZ(.8px) rotateZ(90deg) rotateX(45deg);
+}
+.supportRollerCorner:before {
+  width: 8px;
+  height: 25px;
+  background-color: #770000;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateY(34px) translateZ(-34px) rotateX(90deg);
+  content: "";
+}
+.supportRollerStraight {
+  width: 8px;
+  height: 17.5px;
+  background-color: #770000;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateX(-19px) translateY(80.7px) translateZ(1px) rotateZ(90deg) rotateX(90deg);
+}
+.supportRollerStraight:after {
+  width: 8px;
+  height: 17.5px;
+  background-color: #770000;
+  position: absolute;
+  transform-style: preserve-3d;
+  content: "";
+  transform: translateZ(30.4px);
+}
+.rollerDown {
+  background-color: #990000;
+  width: 4.5px;
+  height: 79px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.rollerDown:after {
+  background-color: #880000;
+  width: 4.5px;
+  height: 79px;
+  position: absolute;
+  transform: translateZ(-5.8px) rotateY(40deg) translateZ(5.8px);
+  content: "";
+}
+.rollerDown:before {
+  background-color: #990000;
+  width: 4.5px;
+  height: 79px;
+  position: absolute;
+  transform: translateZ(-5.8px) rotateY(80deg) translateZ(5.8px);
+  content: "";
+}
+.rollerDownCap {
+  background-color: #770000;
+  width: 8px;
+  height: 10px;
+  border-radius: 0 0 25% 25%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateX(-43.8px) translateY(-36px) translateZ(-20px) rotateZ(90deg) rotateX(-90deg);
+}
+.rollerDownCap:before {
+  background-color: #770000;
+  width: 8px;
+  height: 10px;
+  border-radius: 0 0 25% 25%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-79.2px);
+  content: "";
+}
+.couplingSupplyMotor {
+  background-color: #585858;
+  width: 6px;
+  height: 8px;
+  box-shadow: inset 0 4px 0 0 #626262;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.couplingSupplyMotor:after {
+  background-color: #585858;
+  width: 6px;
+  height: 8px;
+  box-shadow: inset 0 4px 0 0 #626262;
+  position: absolute;
+  transform: translateZ(-6px) rotateY(40deg) translateZ(6px);
+  content: "";
+}
+.couplingSupplyMotor:before {
+  background-color: #585858;
+  width: 6px;
+  height: 8px;
+  box-shadow: inset 0 4px 0 0 #626262;
+  position: absolute;
+  transform: translateZ(-6px) rotateY(80deg) translateZ(6px);
+  content: "";
+}
+.reducerSupply {
+  background-color: #606060;
+  width: 35px;
+  height: 15px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(1px) translateY(132px) translateX(-95.6px) rotateX(-90deg) rotateY(90deg);
+}
+.reducerSupply:after {
+  background-color: #606060;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  content: "";
+  transform: rotateY(90deg) translateZ(-7.3px) translateX(-7.3px);
+}
+.reducerSupply:before {
+  background-color: #606060;
+  width: 35px;
+  height: 15px;
+  position: absolute;
+  content: "";
+  transform: rotateX(90deg) translateZ(7.3px) translateY(7.3px);
+}
+.motorSupply { 
+  background-color: #777777;
+  width: 6px;
+  height: 24px;
+  box-shadow: inset 0 5px 0 0 #999999;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.motorSupply:after {
+  background-color: #777777;
+  width: 6px;
+  height: 24px;
+  box-shadow: inset 0 5px 0 0 #999999;
+  position: absolute;
+  transform: translateZ(-7.5px) rotateY(40deg) translateZ(7.5px);
+  content: "";
+}
+.motorSupply:before {
+  background-color: #777777;
+  width: 6px;
+  height: 24px;
+  box-shadow: inset 0 5px 0 0 #999999;
+  position: absolute;
+  transform: translateZ(-7.5px) rotateY(80deg) translateZ(7.5px);
+  content: "";
+}
+.tensionStationHorizontal {
+  background-color: #666666;
+  width: 70px;
+  height: 4px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-10px) translateY(-141px) translateX(10px) rotateX(-90deg) rotateY(90deg);
+}
+.tensionStationHorizontal:after {
+  background-color: #777777;
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  content: "";
+  transform: rotateY(90deg) translateZ(-1.6px) translateX(-2px);
+}
+.tensionStationHorizontal:before {
+  background-color: #555555;
+  width: 70px;
+  height: 4px;
+  position: absolute;
+  content: "";
+  transform: rotateX(90deg) translateZ(1.6px) translateY(2px);
+}
+.tensionAxlebox {
+  background-color: #888888;
+  width: 15px;
+  height: 25px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(3px) translateY(-161px) translateX(37px) rotateX(-90deg) rotateY(90deg);
+}
+.tensionAxlebox:after {
+  background-color: #777777;
+  width: 5px;
+  height: 25px;
+  position: absolute;
+  content: "";
+  transform: rotateY(90deg) translateZ(-2px) translateX(-2.6px);
+}
+.tensionStationVertical {
+  background-color: #666666;
+  width: 22px;
+  height: 4px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(3px) translateY(-107.8px) translateX(34px) rotateY(90deg);
+}
+.tensionStationVertical:after {
+  background-color: #555555;
+  width: 22px;
+  height: 4px;
+  position: absolute;
+  content: "";
+  transform: rotateX(90deg) translateZ(1.7px) translateY(2px);
+}
+.stretchScrew {
+  background-color: #505050;
+  width: 1.5px;
+  height: 80px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.stretchScrew:after {
+  background-color: #505050;
+  width: 1.5px;
+  height: 80px;
+  position: absolute;
+  transform: translateZ(-1.5px) rotateY(40deg) translateZ(1.5px);
+  content: "";
+}
+.stretchScrew:before {
+  background-color: #505050;
+  width: 1.5px;
+  height: 80px;
+  position: absolute;
+  transform: translateZ(-1.5px) rotateY(80deg) translateZ(1.5px);
+  content: "";
+}
+.stretchBolt {
+  background-color: #404040;
+  width: 3px;
+  height: 5px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.stretchBolt:after {
+  background-color: #505050;
+  width: 3px;
+  height: 5px;
+  position: absolute;
+  transform: translateZ(-2.4px) rotateY(60deg) translateZ(2.4px);
+  content: "";
+}
+.stretchBolt:before {
+  background-color: #606060;
+  width: 3px;
+  height: 5px;
+  position: absolute;
+  transform: translateZ(-2.4px) rotateY(120deg) translateZ(2.4px);
+  content: "";
+}
+.couplingBolt {
+  background-color: #454545;
+  width: 5px;
+  height: 2.5px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.couplingBolt:after, .couplingBolt:before {
+  width: 0;
+  height: 0;
+  left: 0;
+  position: absolute;
+  content: "";
+  border-left: 2.5px solid transparent;
+  border-right: 2.5px solid transparent;
+}
+.couplingBolt:before {
+  top: -1.5px;
+  border-bottom: 1.25px solid #454545;
+}
+.couplingBolt:after {
+  top: 2.5px;
+  border-top: 1.25px solid #454545;
+}
+.latticeCover {
+  background-color: transparent;
+  background-image: linear-gradient(0deg, #cc9933 25%, transparent 25%),
+  linear-gradient(90deg, #cc9933 25%, transparent 25%);
+  background-size: 5px 5px;
+  background-position: 0 2px, 0 0;
+  width: 36px;
+  height: 82.5px;
+  box-shadow: inset 0 0 0 3px #ff9933;
+  transform: rotateX(90deg);
+  position: absolute;
+  transform: translateZ(10px) translateY(-216.6px) translateX(-18.5px) rotateY(90deg) rotateX(90deg);
+}
+.wallCover {
+  background-color: #cc6600;
+  width: 75px;
+  height: 20px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateX(3px) translateZ(18px) translateY(-148px) rotateY(90deg) rotateZ(90deg);
+}
+.wallCover:after {
+  background-color: #cc6600;
+  width: 15px;
+  height: 36px;
+  position: absolute;
+  transform: translateY(-16px);
+  content: "";
+}
+.wallCover:before {
+  background-color: #cc6600;
+  width: 15px;
+  height: 36px;
+  position: absolute;
+  transform: translateY(-16px) translateX(60px);
+  content: "";
+}
+.couplingMotorSupply {
+  background-color: #999999;
+  width: 15.5px;
+  height: 15.5px;
+  border-radius: 50%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateX(-77.7px) translateZ(0px) translateY(94px) rotateX(90deg);
+}
+.boxSupplyMoto {
+  background-color: #808080;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(2px) translateY(112px) translateX(-83px);
+}
+.boxSupplyMoto:after {
+  background-color: #808080;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  content: "";
+  transform: rotateY(90deg) translateZ(2.8px) translateX(3px);
+}
+.boxSupplyMoto:before {
+  background-color: #808080;
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  content: "";
+  transform: rotateX(90deg) translateZ(-2.8px) translateY(-3px);
+}
+.cableSupplyMotor {
+  background-color: #666666;
+  width: 1.3px;
+  height: 24px;
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.cableSupplyMotor:after {
+  background-color: #666666;
+  width: 1.3px;
+  height: 24px;
+  position: absolute;
+  transform: translateZ(-1px) rotateY(60deg) translateZ(1px);
+  content: "";
+}
+.cableSupplyMotor:before {
+  background-color: #666666;
+  width: 1.3px;
+  height: 24px;
+  position: absolute;
+  transform: translateZ(-1px) rotateY(120deg) translateZ(1px);
+  content: "";
+}
+.supportSupplyReducer {
+  background-color: #888888;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  transform-style: preserve-3d;
+  transform: translateZ(-7.5px) translateY(135px) translateX(-80px);
+}
+.supportSupplyReducer:after {
+  width: 18px;
+  height: 18px;
+  box-shadow: inset 0 0 0 5px #888888;
+  position: absolute;
+  content: "";
+  transform: rotateY(90deg) translateZ(8.6px) translateX(9px);
+}
+.supportSupplyReducer:before {
+  width: 18px;
+  height: 17px;
+  box-shadow: inset 0 0 0 5px #888888;
+  position: absolute;
+  content: "";
+  transform: rotateX(90deg) translateZ(-8.6px) translateY(-9px);
+}
+@keyframes seam {
+  from {
+    transform: translateZ(15px) translateX(-25px) translateY(-170px);
+  }
+  40% {
+    transform: translateZ(15px) translateX(-25px) translateY(125px);
+  }
+  50% {
+    transform: translateZ(15px) translateX(-25px) translateY(143px) rotateX(-180deg) translateY(8px)
+    translateZ(29px);
+  }
+  85% {
+    transform: translateZ(15px) translateX(-25px) translateY(-175px) rotateX(-180deg) translateY(-20px) translateZ(29px);
+  }
+  to {
+    transform: translateZ(15px) translateX(-25px) translateY(-150px) rotateX(-360deg) translateY(-20px) translateZ(2px);
+  }
+}
