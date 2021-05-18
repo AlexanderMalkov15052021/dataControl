@@ -39,17 +39,17 @@ Information management is performed in multi-user mode. The data file is located
 * CSS:
 
 ```css
-	-webkit-appearance: none;
     input[type=range][data-selector="2"]::-webkit-slider-thumb {
-      background-image: linear-gradient(45deg, transparent 30%, #a22f53 30% 30%, transparent 45%),
-      linear-gradient(135deg, transparent 30%, #a22f53 30% 30%, transparent 45%);
-      background-size: 30px 30px;
-      background-position: 4px -7px, -3px 1px;
-      height: 13.4px;
-      width: 20px;
-      cursor: pointer;
-      margin-top: -14px;
-      transition-duration: 1s;
+	-webkit-appearance: none;
+	background-image: linear-gradient(45deg, transparent 30%, #a22f53 30% 30%, transparent 45%),
+	linear-gradient(135deg, transparent 30%, #a22f53 30% 30%, transparent 45%);
+	background-size: 30px 30px;
+	background-position: 4px -7px, -3px 1px;
+	height: 13.4px;
+	width: 20px;
+	cursor: pointer;
+	margin-top: -14px;
+	transition-duration: 1s;
 }
 ```
 
