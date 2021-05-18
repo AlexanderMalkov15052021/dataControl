@@ -7,4 +7,4 @@ The project helps to keep records and process information in multi-user mode. In
 4. Restricted access
 5. Bookmark URL using the GET method
 ***
-![Alt-текс](photo/password.png)
+![текс](photo/password.png)
